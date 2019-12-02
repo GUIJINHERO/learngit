@@ -14,7 +14,7 @@ public class TestPlatformApplication {
         ReentrantLock lock1 = new ReentrantLock();
 
         Semaphore sem = new Semaphore(3);
-
+        sem.tryAcquire();
         sem.release();
         sem.acquire();
         sem.tryAcquire();
